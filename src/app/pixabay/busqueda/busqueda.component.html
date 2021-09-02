@@ -1,0 +1,22 @@
+<div class="form-group mb-2">
+    <h5>Buscar:</h5>
+    <input type="text" class="form-control" placeholder="Buscar images..." (keyup.enter)="buscar()" #txtBuscar />
+</div>
+<div class="form-group mb-2">
+    <h5>Categoria:</h5>
+    <select 
+    name="categoria" 
+    class="form-control"
+    (change)="onchage()"
+    #txtCategoria
+    >
+    <option value="" autofocus>Seleccione Una Categoria</option>
+    <option value="science" autofocus>Science</option>
+    <option value="education" autofocus>Education</option>
+    <option value="people" autofocus>People</option>
+    <option value="feelings" autofocus>Feelings</option>
+    <option value="computer" autofocus>Computer</option>
+    <option value="buildings" autofocus>Buildings</option>
+  </select>
+</div>
+<hr />
